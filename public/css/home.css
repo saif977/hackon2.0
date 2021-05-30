@@ -1,0 +1,139 @@
+
+*,
+::after,
+::before
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background-img{
+    float: right;
+    width: 50vw;
+    height: 100vh;
+    background-image: url("./image./illustration.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-section{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 28rem;
+    left:4rem;
+}
+
+
+.input-field {
+    padding: .2rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.308);
+}
+
+input {
+    padding: 1em;
+    padding-left: 3em;
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
+i {
+    position: absolute;
+    transform: translateX(50%, 50%);
+    left: 10px;
+    font-size: 20px;
+    color: #EFBFD8;
+}
+
+.input-submit {
+    position: absolute;
+    padding: 0 1em;
+    right: 0;
+    margin: 0 0.5rem;
+    height: 75%;
+    border: none;
+    border-radius: 4px;
+    background-color: #EFBFD8;
+    color: white;
+}
+
+#typewriter {
+    color: #EFBFD8;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+nav {
+    padding: 1rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    list-style-type: none;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+
+.link a {
+    text-decoration: none;
+    color:black;
+    padding: 0.5em 1em;
+}
+
+.link:nth-of-type(1) {
+    margin-left: auto;
+    margin-right: 20px;
+    color: black;
+}
+
+.link:nth-of-type(1) a {
+    color: black;
+}
+
+.link-active{
+    background-color: #4c4c4c ;
+    color: white !important;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+}
